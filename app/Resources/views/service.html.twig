@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ number }} {% endblock %}
+
+{% block body %}
+    <div class="page-header">
+        <p>Numero casuale: {{ number }}</p>
+        <p>Orario: {{ stampaOra() }}</p>
+    </div>
+{% endblock %}

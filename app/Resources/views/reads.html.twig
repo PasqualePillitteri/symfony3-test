@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Agenda {% endblock %}
+
+{% block body %}
+	
+	<table>
+		<tr>
+			<th>ID</th>
+			<th>Nome</th>
+			<th>Cognome</th>
+			<th>Email</th>
+			<th>Gruppo</th>
+		</tr
+		{% for utente in utenti %}
+		<tr>
+			<td>{{ utente.id }}</td>
+		    <td>{{ utente.nome }}</td>
+		    <td>{{ utente.cognome }}</td>
+		    <td>{{ utente.email }}</td>
+		    <td>{{ utente.gruppo.nome }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	
+{% endblock %}
+
+
